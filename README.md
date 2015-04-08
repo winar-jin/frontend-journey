@@ -8,6 +8,7 @@ load the frontend practices and record the learning notes
 * [W3CSchool在线教程](http://w3school.com.cn)
 * [HTML,CSS,JS video style](http://thecodeplayer.com)
 * [优设网](http://www.uisdc.com)
+* [前端观察](http://www.qianduan.net)
 
 ###[License](https://github.com/winar-jin/frontend-journey/blob/master/LICENSE)
 

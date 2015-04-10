@@ -9,6 +9,7 @@ load the frontend practices and record the learning notes
 * [HTML,CSS,JS video style](http://thecodeplayer.com)
 * [优设网](http://www.uisdc.com)
 * [前端观察](http://www.qianduan.net)
+* [腾讯Alloy Team](http://www.alloyteam.com)
 
 ###[License](https://github.com/winar-jin/frontend-journey/blob/master/LICENSE)
 

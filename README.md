@@ -8,6 +8,7 @@ load the frontend practices and record the learning notes
 * [W3CSchool在线教程](http://w3school.com.cn)
 * [HTML,CSS,JS video style](http://thecodeplayer.com)
 * [优设网](http://www.uisdc.com)
+* [设计派](http://www.shejipai.cn)
 * [前端观察](http://www.qianduan.net)
 * [腾讯Alloy Team](http://www.alloyteam.com)
 * [学习CSS布局](http://zh.learnlayout.com)

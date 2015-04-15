@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN" manifest="cache.manifest">
+
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="favicon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Description" content="徐进(Winar Jin）的个人网站。90后，热爱影视、音乐，痴迷于电脑的一切，喜欢唱歌，渴望旅行，梦想成为一名潇洒的行者，追求自由，一位一直朝前行走的Dreamer。" />
+<meta name="keywords" content="徐进,Winar Jin,Dreamer" />
+<meta name="Author" contect="徐进,Winar Jin" / >
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+<meta name="format-detection" content="telephone=no" />
+<link rel="icon" href="favicon.ico" />
+
+
+    <!-- Bootstrap‘s link-->
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="bootstrap-responsive.css" rel="stylesheet">
+    <link href="global.min.css" rel="stylesheet" type="text/css">
+    <link href="responsive.min.css" rel="stylesheet" type="text/css">
+    <link href="index.style.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+<script type="text/javascript" src="http://dw-resources.qiniudn.com/js/html5.js"></script> 
+<![endif]-->
+<title>徐 进· Winar Jin</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    
+    
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+	padding-bottom: 40px;
+	color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+	margin: 0;
+	line-height: 1.25;
+	color: #000;
+	text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
+ <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="favicon.png">
+
+  <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style>
+</head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+            <li>
+             <a class="active" href="warning.html">博客</a>
+            </li>
+            <li class="divider-vertical"></li>
+              <li class="">
+                <a href="warning.html">影视</a>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class="">
+                <a href="warning.html">音乐</a>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class="">
+                <a href="http://weibo.com/u/2749801391" target="_blank">微博</a>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class="">
+                <a href="#contact">联系</a>
+              </li>
+              <li class="divider-vertical"></li>
+              <li> 
+                  
+               <a data-toggle="modal" data-target="#myModal" href="" >作者的话</a>
+              </li>
+            </ul>
+            
+            <ul class="nav">
+            <form class="navbar-search pull-left" style="padding:6px">
+            <input type="text" class="search-query" placeholder="Search">
+            </form>
+            </ul>
+            <ul class=" nav pull-right">
+                <li><a href="#"><img alt="Welcome to Winar's Blog !" title="winar's blog" src="Welcome.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div><!-- /.navbar-wrapper -->
+  
+<div id="myModal" class="modal hide fade" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h3 id="myModalLabel">我想对您说：</h3>
+            </div>
+            <div class="modal-body">
+              
+<p style="text-indent:2em; letter-spacing:0.1em;">大家好，我是徐进，正如前所说，我痴迷于计算机的一切，而您所看到的这个网页正是我的第一次实践，首先感谢您的浏览，这对我来说是莫大的鼓励。</p>           
+              <p style="text-indent:2em;letter-spacing:0.1em;">正因为这是我的第一次实践，所以我并没有资金上的付出，而是采用了免费的空间，因此该网站并不支持动态开发，也就没有了"评论"、"在线交流"等功能，我对此深感抱歉，如果您对本网站有任何意见与建议，也希望能麻烦您&nbsp<a href="index.htm#contact" target="_blank"><strong>联系</strong></a>&nbsp 我，万分感谢！</p>
+ 
+              <p style="text-indent:2em;letter-spacing:0.1em;">我会继续学习前端开发的知识，结合大家提出的意见，不断改善与开发此网站，也希望您能成为本网站的回头客。</p>
+              <p style="text-indent:2em;letter-spacing:0.1em;">   最后，希望我们能成为最真诚的朋友。</p>
+              <br><br>
+              <p align="right" >yours sincerely</p>
+              <p align="right">winar&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+            </div>
+            <div class="modal-footer">
+           <button class="btn" data-dismiss="modal">关闭</button>  
+            </div>
+          </div>
+
+
+
+<!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+         <p> <img src="slide-03.jpg" alt=""></p>
+        
+          
+          
+          <div class="container">
+            <div class="carousel-caption">
+             <h1>My idol - JAKI 谭杰希</h1>
+             <p class="lead">创作型歌手，《女朋友要带回家》让我认识了他，也被他那种青春、爽朗的歌声吸引；他是我心目中真正的"民谣王子"。</p>
+              <a class="btn btn-large btn-primary" href="warning.html">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="slide-02.jpg" alt="《实习大叔》">
+           <p>&nbsp;</p>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>我看《实习大叔》</h1>
+              <p class="lead">如果您和我一样尊敬Google的文化;如果您和我一样是快要实习的大学生;那么这部电影就形象的描述了两位大叔(IT盲)在走进极客世界后是怎样挣扎与成功的。</p>
+              <a class="btn btn-large btn-primary" href="warning.html">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+         <img src="slide-01.png" alt="Google">
+          <div class="container">
+            <div class="carousel-caption">
+            <p>&nbsp;</p>
+          <p>&nbsp;</p>
+              <h1>Why Google ?</h1>
+              
+              <p class="lead">也许您已经习惯了"百度一下";也许您习惯了某搜索大全;但您一定听过<strong>Google</strong>的大名,也许他才是搜索界的霸主；其智能化的搜索令人向往，他也是我的选择。</p>
+              <a class="btn btn-large btn-primary" href="warning.html">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="index.htm#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="index.htm#myCarousel" data-slide="next">›</a>
+    </div><!-- /.carousel -->
+
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+
+<section id="description" class="row description">
+        <div class="span12 offset1 panel-description button-text-panel text-center text-center>
+        	<div class="padding-middle">
+              
+               <h3 align="center">我是徐进，Winar Jin ，90后，痴迷于计算机的一切，爱好电影、音乐。</h3>
+               <h4 align="center">身为90后的我，憧憬未来，向往自由，电影、音乐、游戏、都是我生活中朋友，不拘一格，一位自由、渴望到处飞翔的IT bird.</h4>
+               <hr align="center" class="soften">
+                <p><span class="hidden-phone">这是我的个人网站，</span>欢迎您的访问,也欢迎您<a href="#contact">向我</a>提出宝贵意见！</p>
+               <div align="center">
+                 <!--  <p><span class="label label-warning">注意</span> 网站正在更新中，缓存功能已关闭，且页面会出现某些异常，建议稍后再访问</p>  -->
+               </div>
+        </div>
+        </div>
+    </section>
+
+
+     <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img src="blog.jpg" class="img-circle" data-src="holder.js/140x140" alt="blog" style="width: 140px; height: 140px;">
+          <h2><font color="#00FFFF">博客</font></h2>
+          <p><font color="#CCFFFF">热爱计算机，热爱设计，热爱创造，热爱编程。记录生活中的点点滴滴，记录下每一次感受，记录下每一次悸动，这就是我。</font></p>
+          <p><a class="btn-info btn" href="warning.html">View details »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="film.jpg">
+          <h2><font color="#00FFFF">影视</font></h2>
+          <p><font color="#CCFFFF">电影是我的爱好，那里仿佛是进入了另一个世界；每次总能投入其中，仿佛自己就是主人翁，渴望与您分享影视所带来的快乐。</font></p>
+          <p><a class="btn btn-info" href="warning.html">View details »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="music.jpg">
+          <h2><font color="#00FFFF">音乐</font></h2>
+          <p><font color="#CCFFFF">音乐是我的兴趣，吉他也是我的爱好，音乐是平静内心的最佳方式；弹弹吉他，唱唱歌，I love it。渴望有一天能有自己的舞台。</font></p>
+          <p><a class="btn btn-info" href="warning.html">View details »</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+     
+      <hr class="soften" id="contact" >   
+ <div class="span12 panel-description button-text-panel text-center text-center">
+ <div class="padding-middle">
+ <h1 class="" padding='25px'>联系</h1>
+ <hr class="soften">
+ <h2><font color="1921B1"><strong>x u j i n 9 4 @ 1 2 6 . c o m</strong></font></h2>
+ <hr class="soften">
+ <div class="text-center">
+
+<a data-toggle="tooltip" data-placement="top" title="xujin94@126.com"><img src="contact_img/e-mail.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://weibo.com/u/2749801391" target="_blank"><img src="contact_img/SinaWeibo.png" alt="微博" title="点击进入"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a data-toggle="modal" data-target="#myModal2" href="" ><img src="./contact_img/qq.png" alt="QQ" title="点击查看"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a data-toggle="modal" data-target="#myModal3" href="" ><img src="contact_img/wechat.png" alt="微信" title="点击查看"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+ </div>         
+ </div>              
+ </div>
+ 
+ <div id="myModal2" class="modal hide fade" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h3 id="myModalLabel">扫一扫加我好友哟！</h3>
+            </div>
+            <div class="modal-body text-center">
+              <img src="contact_img/qq_no.png" alt="QQ二维码">
+            </div>
+            <div class="modal-footer">
+           <button class="btn" data-dismiss="modal">关闭</button>  
+            </div>
+      </div>
+       <div id="myModal3" class="modal hide fade" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h3 id="myModalLabel">扫一扫加我好友哟！</h3>
+            </div>
+            <div class="modal-body text-center">
+              <img src="contact_img/wechat_no.png" alt="微信二维码">
+            </div>
+            <div class="modal-footer">
+           <button class="btn" data-dismiss="modal">关闭</button>  
+            </div>
+      </div>
+
+      <!-- FOOTER -->
+ <footer>       
+ <div class="span10 offset1 panel-description button-text-panel text-center text-center>
+ <div class="padding-middle">
+ <hr class="soften">                
+ <p>如果您喜欢我的小站，欢迎下次再来；如果您有什么不满意，也希望您能留下真诚的意见！</p>
+ <p>Designed and Developed by Winar Jin. BY-NC-SA License.</p>
+ <p>Copyright © 2014-10-15 Winar Jin. All Rights Reserved.</p>
+ <p>And the room was provided by <a href="http://www.5944.net" target="_blank">5944</a>.</p> 
+ <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000159774'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000159774%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+ </div>              
+ </div>
+ <p class="pull-right"><a href="#"><strong>&uarr;Back to top&uarr;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+ </footer>
+
+</div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery.js"></script>
+    <script src="bootstrap-transition.js"></script>
+    <script src="bootstrap-alert.js"></script>
+    <script src="bootstrap-modal.js"></script>
+    <script src="bootstrap-dropdown.js"></script>
+    <script src="bootstrap-scrollspy.js"></script>
+    <script src="bootstrap-tab.js"></script>
+    <script src="bootstrap-tooltip.js"></script>
+    <script src="bootstrap-popover.js"></script>
+    <script src="bootstrap-button.js"></script>
+    <script src="bootstrap-collapse.js"></script>
+    <script src="bootstrap-carousel.js"></script>
+    <script src="bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="holder.js"></script>
+  
+
+</body></html>

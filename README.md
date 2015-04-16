@@ -12,6 +12,7 @@ load the frontend practices and record the learning notes
 * [前端观察](http://www.qianduan.net)
 * [腾讯Alloy Team](http://www.alloyteam.com)
 * [学习CSS布局](http://zh.learnlayout.com)
+* [HTML5中国](http://www.html5cn.org)
 
 ###[License](https://github.com/winar-jin/frontend-journey/blob/master/LICENSE)
 

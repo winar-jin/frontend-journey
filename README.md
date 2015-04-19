@@ -14,6 +14,7 @@ load the frontend practices and record the learning notes
 * [学习CSS布局](http://zh.learnlayout.com)
 * [HTML5中国](http://www.html5cn.org)
 * [Mozila开发者网络-参考教程中文版](https://developer.mozilla.org/zh-CN/)
+* [前端网(w3cfuns)](http://www.w3cfuns.com/)
 
 ###[License](https://github.com/winar-jin/frontend-journey/blob/master/LICENSE)
 

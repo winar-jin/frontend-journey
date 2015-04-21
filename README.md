@@ -16,6 +16,7 @@ load the frontend practices and record the learning notes
 * [Mozila开发者网络-参考教程中文版](https://developer.mozilla.org/zh-CN/)
 * [前端网(w3cfuns)](http://www.w3cfuns.com/)
 * [前端乱炖](http://www.html-js.com/)
+* [CodePen在线编辑器](http://codepen.io)
 
 ###[License](https://github.com/winar-jin/frontend-journey/blob/master/LICENSE)
 

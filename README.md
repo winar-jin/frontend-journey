@@ -17,6 +17,7 @@ load the frontend practices and record the learning notes
 * [前端网(w3cfuns)](http://www.w3cfuns.com/)
 * [前端乱炖](http://www.html-js.com/)
 * [CodePen在线编辑器](http://codepen.io)
+* [WEB前端开发](http://www.css88.com)
 
 ###[License](https://github.com/winar-jin/frontend-journey/blob/master/LICENSE)
 

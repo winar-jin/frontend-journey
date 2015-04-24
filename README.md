@@ -19,6 +19,7 @@ load the frontend practices and record the learning notes
 * [CodePen在线编辑器](http://codepen.io)
 * [WEB前端开发](http://www.css88.com)
 * [百度FEX](http://fex.baidu.com)
+* [W3C中国](http://www.chinaw3c.org)
 
 ###[License](https://github.com/winar-jin/frontend-journey/blob/master/LICENSE)
 

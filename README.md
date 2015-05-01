@@ -20,6 +20,7 @@ load the frontend practices and record the learning notes
 * [WEB前端开发](http://www.css88.com)
 * [百度FEX](http://fex.baidu.com)
 * [W3C中国](http://www.chinaw3c.org)
+* [腾讯CDC](http://cdc.tencent.com)
 * [360齐舞团](http://www.75team.com)
 
 ###[License](https://github.com/winar-jin/frontend-journey/blob/master/LICENSE)

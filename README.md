@@ -22,6 +22,7 @@ load the frontend practices and record the learning notes
 * [W3C中国](http://www.chinaw3c.org)
 * [腾讯CDC](http://cdc.tencent.com)
 * [360齐舞团](http://www.75team.com)
+* [配色网](http://www.peise.net)
 
 ###[License](https://github.com/winar-jin/frontend-journey/blob/master/LICENSE)
 

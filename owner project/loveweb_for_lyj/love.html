@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>不分手的恋爱</title>
+    <meta name="keywords" content="一个Diaoser的浪漫信">
+    <meta name="description" content="我不懂浪漫，你生气的时候不会哄你开心，原谅我是一个不解风情的Diaoser，静雯我爱你。">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('digital-7_mono.ttf') format("truetype");
+        }
+    </style>
+    <link href="./style/default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="./style/jquery.js"></script>
+    <script type="text/javascript" src="./style/garden.js"></script>
+    <script type="text/javascript" src="./style/functions.js"></script>
+</head>
+
+<body>
+<div id="mainDiv">
+    <div id="content">
+        <div id="code">
+            <span class="keyword">* 2012年9月1日,</span><br/><br/>
+            <span class="keyword">* 从一颗美丽的合欢开始记录^_^。</span><br/><br/>
+            <span class="keyword">* 我不会写情书，</span><br/><br/>
+            <span class="keyword">* 在网上查了一整夜也没有拼出来几句话，</span><br/><br/>
+            <span class="keyword">* 我好像没有这一类细胞，请原谅我。</span><br/><br/>
+            <span class="keyword">* 作为一名 Diaoser，</span><br/><br/>            
+            <span class="keyword">* 不懂的怎么去疼你爱你，</span><br/><br/>
+            <span class="keyword">* 而且我还有些任性的孩子气，</span><br/><br/>
+            <span class="keyword">* 总是惹你生气，</span><br/><br/>
+            <span class="keyword">* 感谢你体谅我的任性要求，</span><br/><br/>
+            <span class="keyword">* 以及对我这么久的包容和忍耐，</span><br/><br/>
+            <span class="keyword">* 我想说：</span><br/><br/>
+            <span class="keyword">* 宝贝，我爱你！！</span><br/><br/>
+            <span class="keyword"><img src="./1.gif" /></span>
+            <span class="keyword">　　　　</span>
+            <span class="keyword"><img src="./2.gif" /></span><br/><br/>
+            <span class="keyword">* ……</span><br/><br/>
+        </div>
+        <div id="loveHeart">
+            <canvas id="garden"></canvas>
+            <div id="words">
+                <div id="messages">
+                    宝贝, 你知道我们相爱了多久吗
+                    <div id="elapseClock"></div>
+                </div>
+                <div id="loveu">
+                    爱，从那颗美丽的合欢开始<br/>
+                    <div class="signature">- 骆严俊</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: 0 auto; width: 600px;">
+    <!-- JiaThis Button BEGIN -->
+        <script type="text/javascript" >
+            var jiathis_config={
+                url: "http://www.diaozhale.com/love.html",
+                title: "#祝福#",
+                summary:"我不懂浪漫，你生气的时候不会哄你开心，原谅我是一个不解风情的Diaoser，静雯我爱你。",
+                data_track_clickback:true,
+                summary:"",
+                appkey:{
+                    "tsina":"515388268",
+                    "tqq":"801303464",
+                },
+                hideMore:false
+            }
+        </script>
+        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1773469" charset="utf-8"></script>
+        <!-- JiaThis Button END -->
+    </div>
+    <div style="margin: 0 auto; width: 1000px;">
+
+    <!-- Duoshuo Comment BEGIN -->
+    <div class="ds-thread"></div>
+    <script type="text/javascript">
+        var duoshuoQuery = {short_name:"diaozhale"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = 'http://static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0]
+                    || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+    <!-- Duoshuo Comment END -->
+    </div>
+</div>
+<embed width="160" height="20" src="bgmusic.mp3" autostart="true" hidden="true" loop="true" ></embed>
+<audio loop="loop" autoplay="autoplay" src="bgmusic.mp3" controls="controls" preload="auto" hidden="hidden" ></audio>
+<script type="text/javascript">
+    var offsetX = $("#loveHeart").width() / 2;
+    var offsetY = $("#loveHeart").height() / 2 - 55;
+    var together = new Date();
+    together.setFullYear(2012, 09, 01);
+    together.setHours(10);
+    together.setMinutes(0);
+    together.setSeconds(0);
+    together.setMilliseconds(0);
+
+    if (!document.createElement('canvas').getContext) {
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML = "你的浏览器非常落后，不支持 HTML5!<br/>请使用 Chrome 14+/IE 9+/Firefox 7+/Safari 4+ 其中任意一款浏览器访问此页面";
+        document.body.appendChild(msg);
+        $("#code").css("display", "none")
+        $("#copyright").css("position", "absolute");
+        $("#copyright").css("bottom", "10px");
+        document.execCommand("stop");
+    } else {
+        setTimeout(function () {
+            adjustWordsPosition();
+            startHeartAnimation();
+        }, 3000);
+
+        timeElapse(together);
+        setInterval(function () {
+            timeElapse(together);
+        }, 500);
+
+        adjustCodePosition();
+        $("#code").typewriter();
+    }
+</script>
+<!-- 加载背景音乐的方法 -->
+<bgsound src="bgmusic.mp3">
+<embed width="160" height="20" type="application/x-shockwave-flash" src="music_player.swf" flashvars="mp3=bgmusic.mp3&amp;autoplay=1&amp;autoreplay=1" wmode="transparent" hidden="true" />
+<embed width="160" height="20" src="bgmusic.mp3" autostart="true" hidden="true" loop="true" ></embed>
+<audio loop="loop" autoplay="autoplay" src="bgmusic.mp3" controls="controls" preload="auto" hidden="hidden"></audio>
+ <object data="{$bgsound}" type="application/x-mplayer2" width="0" height="0">
+    <param name="src" value="bgmusic.mp3">
+    <param name="autostart" value="1">
+    <param name="playcount" value="infinite">
+</object>
+</body>
+</html>

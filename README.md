@@ -24,6 +24,7 @@ load the frontend practices and record the learning notes
 * [360齐舞团](http://www.75team.com)
 * [配色网](http://www.peise.net)
 * [w3cplus](http://www.w3cplus.com)
+* [当前前端](http://www.dqqd.me/)
 
 ###[License](https://github.com/winar-jin/frontend-journey/blob/master/LICENSE)
 

@@ -25,6 +25,7 @@ load the frontend practices and record the learning notes
 * [配色网](http://www.peise.net)
 * [w3cplus](http://www.w3cplus.com)
 * [当前前端](http://www.dqqd.me/)
+* [WEB前端开发](http://www.css88.com/)
 
 ###[License](https://github.com/winar-jin/frontend-journey/blob/master/LICENSE)
 

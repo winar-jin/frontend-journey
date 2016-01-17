@@ -1,0 +1,114 @@
+//JS实现选项卡切换
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>实践题 - 选项卡</title>
+    <style type="text/css">
+     /* CSS样式制作 */
+     *{
+         margin:0;
+         padding:0;
+     }
+     body{
+         font-size:15px;
+     }
+     .tab{
+         margin:0px;
+         width:320px;
+     }
+    ul,li{    
+        list-style:none;
+        height:35px;
+        line-height:35px;
+    }
+    li{
+        float:left;
+        width:70px;
+        height:33px;
+        border:1px #ccc solid;
+        border-bottom:none;
+        text-align:center;
+        line-height:33px;
+        cursor:pointer;
+    }
+    li.on{
+        border-top:2px saddlebrown solid;
+        border-right:2px saddlebrown solid;
+        border-left:2px saddlebrown solid;
+        /*height:34px;*/
+        border-bottom:2px #fff solid;
+    }
+    ul{
+        border-bottom:2px saddlebrown solid;
+    }
+    .tab div{
+        width:311px;
+        height:150px;
+        padding:10px 0 0 7px;
+        border:2px saddlebrown solid;
+        border-top:none;
+        line-height:2em;
+    }
+    .show{
+        display:block;
+    }
+    
+    .hide{
+        display:none;
+    }
+    </style>
+    <script type="text/javascript">
+    window.onload = function(){
+        // JS实现选项卡切换
+        var mytab = document.getElementById('tab');
+        var uls = mytab.getElementsByTagName('ul')[0];
+        var lis = uls.getElementsByTagName('li');
+        var divs = mytab.getElementsByTagName('div');
+        for(var i=0,length=lis.length;i<length;i++)
+        {
+            lis[i].index = i;
+            lis[i].onclick = function(){
+                for(var k=0;k<length;k++)
+                {
+                    lis[k].className='';
+                    divs[k].className='hide';
+                }
+                this.className='on';
+                divs[this.index].className='show';
+            }
+        }
+    }     
+    
+    </script>
+ 
+</head>
+<body>
+<!-- HTML页面布局 -->
+<div class="tab" id="tab">
+    <ul>
+        <li class="on">房产</li>
+        <li>家居</li>
+        <li>二手房</li>
+    </ul>
+    <div class="show">
+        275万购昌平邻铁三居 总价20万买一居<br>
+        200万内购五环三居 140万安家东三环<br>
+        北京首现零首付楼盘 53万购东5环50平<br>
+        京楼盘直降5000 中信府 公园楼王现房<br>
+    </div>
+    <div class="hide">
+        40平出租屋大改造 美少女的混搭小窝<br>
+         经典清新简欧爱家 90平老房焕发新生<br>
+         新中式的酷色温情 66平撞色活泼家居<br>
+         瓷砖就像选好老婆 卫生间烟道的设计<br>
+    </div>
+    <div class="hide">
+        通州豪华3居260万 二环稀缺2居250w甩<br>
+         西3环通透2居290万 130万2居限量抢购<br>
+         黄城根小学学区仅260万 121平70万抛!<br>
+         独家别墅280万 苏州桥2居优惠价248万<br>
+    </div>
+</div>
+</body>
+</html>

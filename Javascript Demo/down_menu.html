@@ -24,14 +24,75 @@ window.onload=function(){
    
     // 点击三角时
     title.onclick=function(event){
-      // 执行脚本
+      event=event||window.event;
+      //阻止事件冒泡，否则下面点击页面菜单收回将会失败
+      if(event.stopPropagation){
+        event.stopPropagation();
+      }else{
+        event.cancelBubble=true;
+      }
+      menu.style.display='block'; 
+      document.onkeyup=function(event){
+        event=event||window.event;
+        for(var i=0;i<as.length;i++){
+            as[i].style.background='none';
+          }
+        //按下向下方向键
+        if(event.keyCode==40){
+          index++;
+          if(index>=as.length){
+            index=0;
+          }
+          as[index].style.background='#ccc';
+        }
+        //按下向上方向键
+        if (event.keyCode==38){
+          index--;
+          if(index<0){
+            index=as.length-1;
+          }
+          as[index].style.background='#ccc';
+        }
+        //按下确定键
+        if(event.keyCode==13&&index!=-1){
+          title.innerHTML=as[index].innerHTML;
+          menu.style.display='none';
+          index=-1;
+        }
+      }    
     }  
     
    // 滑过滑过、离开、点击每个选项时
-      // 执行脚本
+     for(var i=0;i<as.length;i++)
+     {
 
+        as[i].onmouseover=function(){
+          this.style.background='#ccc';
+        }
+        as[i].onmouseout=function(){
+          this.style.background='none';
+        }
+        as[i].onclick=function(){
+          title.innerHTML=this.innerHTML;
+         // menu.style.display='none';
+         // 因为as事件并未取消事件冒泡，此时可以冒泡到document的事件中取消列表
+        }
+        //方法二：取消as的事件冒泡，则不能冒泡到document的事件中取消列表，则加上menu.style.display='none'即可。
+        // as[i].onclick=function(event){
+        //   event=event||window.event;
+        //   if(event.stopPropagation){
+        //     event.stopPropagation();
+        //   }else{
+        //     event.cancelBubble=true;
+        //   }
+        //   title.innerHTML=this.innerHTML;
+        //   menu.style.display='none';
+        // }
+     }
    // 点击页面空白处时
-       // 执行脚本
+      document.onclick=function(){
+        menu.style.display='none';
+      }
  }
    </script>
 </head>

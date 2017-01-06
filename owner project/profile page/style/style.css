@@ -1,0 +1,214 @@
+@font-face{
+    font-family: 'BallparkWeiner';
+    src: url('../polices/ballpark.eot');
+    src: url('../polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('../polices/ballpark.woff') format('woff'),
+         url('../polices/ballpark.ttf') format('truetype'),
+         url('../polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Dayrom';
+    src: url('../polices/dayrom.eot');
+    src: url('../polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('../polices/dayrom.woff') format('woff'),
+         url('../polices/dayrom.ttf') format('truetype'),
+         url('../polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background: url('../images/fond_jaune.png') repeat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #181818;
+}
+#main_wrapper{
+    width: 80%;
+    /*width: 900px;*/
+    margin: auto;
+}
+section h1,footer h1,nav a{
+    font-family: Dayrom , serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+header{
+    background: url('../images/separateur.png') repeat-x bottom;
+    /*background-color: rgba(188, 188, 188, .2)*/
+}
+#main_title{
+    display: inline-block;
+}
+header h1{
+    font-family: 'BallparkWeiner',serif;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+#logo,header h1{
+    display: inline-block;
+    margin-bottom: 0px;
+}
+header h2{
+    font-family: Dayrom,serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+nav{
+    display: inline-block;
+    /*width: 740px;*/
+    width: 70%;
+    text-align: right;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 15px;
+}
+nav a{
+    font-size: 1em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+#banner_image{
+    background: url('../images/sanfrancisco.jpg') no-repeat center;
+    background-size: cover;
+    height: 219px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px #1c1a19;
+    position: relative;
+}
+#banner_description{
+    background: rgb(24, 24, 24);
+    background: rgba(24, 24, 24, .8);
+    position: absolute;
+    bottom: 0px;
+    width: 99%;
+    height: 33px;
+    /*padding-top: 15px;*/
+    padding-left: 4px;
+    border-radius: 0px 0px 5px 5px;
+    color: white;
+    font-size: .8em;
+    line-height: 33px;
+}
+.red_button{
+    border: 1px solid #760001;
+    background: linear-gradient(rgb(140, 40, 41),rgb(169, 95, 96),rgb(140, 40, 41));
+    color: white;
+    line-height: 25px;
+    border-radius: 5px;
+    /*font-size: 1.2em;*/
+    height: 25px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0px 8px 0px 8px;
+    position: absolute;
+    right: 5px;
+    bottom: 1px;
+}
+.red_button img{
+    border: 0;
+}
+section{
+    margin-top: 10px;
+}
+article,aside{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+article{
+    width: 75%;
+    margin-right: 1%;
+}
+.ico_categorie{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+article p{
+    font-size: .8em;
+}
+aside{
+    width: 23%;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: .9em;
+}
+#arrow{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+#zozor_picture{
+    display: block;
+    text-align: center;
+}
+#zozor_picture img{
+    max-width: 100%;
+    border: 1px solid #181818;
+}
+aside img{
+    margin-right: 5px;
+}
+
+footer{
+    background: url('../images/ico_top.png') no-repeat top center,url('../images/separateur.png') repeat-x top;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+footer h1
+{
+    font-size: 1.1em;
+}
+#tweet,#my_pictures,#my_friends{
+    display: inline-block;
+    vertical-align: top;
+}
+#tweet{
+    width: 28%;
+}
+#my_pictures{
+    width: 35%;
+}
+#my_friends{
+    width: 31%;
+}
+#my_pictures img{
+    border: 1px solid #181818;
+    margin-right: 2px;
+}
+#my_friends ul{
+    list-style-type: none;
+    list-style-image: url('../images/ico_liensexterne.png');
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+    padding-left: 2px;
+    width: 47.5%;
+}
+#my_friends a{
+    text-decoration: none;
+    color: #760001;
+}

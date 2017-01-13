@@ -6,6 +6,9 @@ function addUrl(e) {
     if (!validata(webName, webUrl)) {
         return false;
     }
+    if(webName === ''){
+        webName = webUrl;
+    }
     let bookmark = {
         webName: webName,
         webUrl: webUrl

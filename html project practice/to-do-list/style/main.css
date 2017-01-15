@@ -7,6 +7,10 @@ body{
 .noFill {
   fill: none;
 }
+.complete{
+    text-decoration: line-through;
+    color: #888;
+}
 header{
     background: #25B99A;
     height: 80px;
@@ -87,6 +91,28 @@ main{
 }
 section{
     margin-bottom: 20px;
+}
+section#todoItem ul{
+    position: relative;
+}
+section#todoItem ul:empty::after{
+    content: "You have nothing to do!";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-10px);
+    font-size: 14px;
+    color: #aaa;
+}
+section#finishedItem ul{
+    position: relative;
+}
+section#finishedItem ul:empty::after{
+    content: "You havn't done nothing!";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-10px);
+    font-size: 14px;
+    color: #aaa;
 }
 section li{
     height: 50px;

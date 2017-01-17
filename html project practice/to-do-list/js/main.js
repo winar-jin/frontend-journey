@@ -1,3 +1,14 @@
+// 1. 善于使用三元运算符 表达式？true ：false
+// var data = (localStorage.getItem('todoList')) ? JSON.parse(localStorage.getItem('todoList')):{
+//   todo: [],
+//   completed: []
+// };
+
+// 2. 将使用次数多的封装为函数，也方便之后又问题之后的修改
+// function dataObjectUpdated() {
+//   localStorage.setItem('todoList', JSON.stringify(data));
+// }
+
 let addItemButton = document.querySelector('header button[id="addItem"]');
 let inputfiled = document.querySelector('header input')
 addItemButton.addEventListener('click', addtodoItem);

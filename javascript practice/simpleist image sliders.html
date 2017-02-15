@@ -1,0 +1,21 @@
+<script>
+    let images = [];
+    images[0] = "http://lorempixel.com/400/200/animals";
+    images[1] = "http://lorempixel.com/400/200/sports";
+    images[2] = "http://lorempixel.com/400/200/food";
+    images[3] = "http://lorempixel.com/400/200/people";
+    let time = 1000; //time between switch
+    let i = 0;
+
+    function changeImg(){
+        if(i < images.length -1){
+            document.slide.src = images[i];
+            ++i;
+        }else{
+            i = 0;
+        }
+        setTimeout('changeImg()',time);
+    }
+    window.onload = changeImg;
+</script>
+<img name="slide" alt="">

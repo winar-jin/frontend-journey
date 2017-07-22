@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Command Pattern</title>
+</head>
+
+<body>
+    <div>
+        <button id="open">开机</button>
+        <button id="close">关机</button>
+    </div>
+    <script>
+        let TV = {
+            open: () => {
+                console.log('i am open');
+            },
+            close: () => {
+                console.log('i am closed');
+            }
+        };
+        // let Commander = function (reciver) {
+        //     this.reciver = reciver;
+        // };
+        // Commander.prototype = {
+        //     execute: function () {
+        //         this.reciver.open();
+        //     },
+        //     undo: function () {
+        //         this.reciver.close();
+        //     }
+        // };
+        let createCommand = reciver => {
+            let execute = () => {
+                reciver.open();
+            };
+            let undo = () => {
+                reciver.close();
+            };
+            return {
+                execute,
+                undo
+            }
+        };
+        let setCommand = (command) => {
+            document.getElementById('open').onclick = () => {
+                command.execute();
+            };
+            document.getElementById('close').onclick = () => {
+                command.undo();
+            };
+        };
+        // setCommand(new Commander(TV));
+        setCommand(createCommand(TV ));
+    </script>
+</body>
+
+</html>

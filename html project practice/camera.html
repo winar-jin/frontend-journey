@@ -17,11 +17,24 @@
 
         function previewImg(e) {
             e.preventDefault();
-            alert(e.target.value);
+            // alert(e.target.value);
+            console.log(e);
+            console.log(e.target.files);
             console.log(e.target.value);
             const imgNode = document.createElement('img');
-            imgNode.src = e.target.value;
+            // imgNode.src = e.target.value;
+
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                // $('#blah').attr('src', e.target.result);
+                console.log(e.target.result);
+                imgNode.src = e.target.result;
+            }
+
+            reader.readAsDataURL(e.target.files[0]);
             document.body.appendChild(imgNode);
+
         }
     </script>
 </body>

@@ -28,8 +28,14 @@
 
             reader.onload = function (e) {
                 // $('#blah').attr('src', e.target.result);
+                console.log(e);
                 console.log(e.target.result);
                 imgNode.src = e.target.result;
+                var alink = document.createElement('a');
+                alink.href = e.target.result;
+                alink.download = 'demoDownload';
+                alink.textContent = "click to download";
+                document.body.appendChild(alink);
             }
 
             reader.readAsDataURL(e.target.files[0]);

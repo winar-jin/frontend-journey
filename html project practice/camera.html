@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>camera</title>
 </head>
+
 <body>
     <input type="file" accept="image/*;capture=camera">
+    <device type="media" onchange="update(this.data)"></device>
+    <video autoplay></video>
+
+    <script>
+        const inputImg = document.querySelector('input');
+        inputImg.addEventListener('change', previewImg, false);
+
+        function previewImg(e) {
+            e.preventDefault();
+            alert(e.target.value);
+            console.log(e.target.value);
+            const imgNode = document.createElement('img');
+            imgNode.src = e.target.value;
+            document.body.appendChild(imgNode);
+        }
+
+        function update(stream) {
+            document.querySelector('video').src = stream.url;
+        }
+    </script>
 </body>
+
 </html>

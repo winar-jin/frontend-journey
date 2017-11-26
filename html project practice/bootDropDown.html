@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="menu-Content2-select btn-group">
+        <button type="button" class="menu-Content2-select-content btn btn-default btn-xs" id="drop-down-value">请选择指标类型 </button>
+        <button type="button" class="btn btn-default dropdown-toggle btn-xs" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only">切换下拉菜单</span>
+        </button>
+        <ul class="dropdown-menu" role="menu" id="drop-down-list">
+            <li>
+                <a href=" ">气候指标</a>
+            </li>
+            <li>
+                <a href="#">森林土壤理化指标</a>
+            </li>
+            <li>
+                <a href="#">健康与可持续发展指标</a>
+            </li>
+            <li>
+                <a href="#">与水文的相互作用指标</a>
+            </li>
+            <li>
+                <a href="#">森林的群落学特征指标</a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var dropDownList = document.getElementById('drop-down-list');
+        var dropDownValue = document.getElementById('drop-down-value');
+        dropDownList.addEventListener('click',changType);
+        function changType(e){
+            e.preventDefault();
+            var targetNode = e.target;
+            if(targetNode.nodeName === 'A'){
+                dropDownValue.textContent = targetNode.innerText;
+            }
+        }
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

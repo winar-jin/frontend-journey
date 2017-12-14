@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0-List</title>
+    <style>
+        body {
+            background-color: white;
+            font-size: 24px;
+        }
+
+        #user-list {
+            line-height: 1.5em;
+        }
+
+        #user-list > li:hover {
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        #user-list > li.active {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<ul id="user-list">
+    <li>张三</li>
+    <li>李四</li>
+    <li>王五</li>
+    <li>赵六</li>
+</ul>
+<script>
+  const nameLists = document.querySelectorAll('#user-list li');
+  const nameList = document.querySelector('#user-list');
+  nameList.addEventListener('click', (e) => {
+    if (e.target.tagName === 'LI') {
+      nameLists.forEach(nameList => nameList.classList.remove('active'));
+      e.target.classList.toggle('active');
+    }
+  });
+</script>
+</body>
+</html>

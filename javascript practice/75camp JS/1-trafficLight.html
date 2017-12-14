@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trafficLight</title>
+    <style>
+        #traffic-light li {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            list-style: none;
+            margin-right: 20px;
+            display: inline-block;
+        }
+
+        #traffic-light .green {
+            background-color: green;
+        }
+
+        #traffic-light .yellow {
+            background-color: yellow;
+        }
+
+        #traffic-light .red {
+            background-color: darkred;
+        }
+
+        #traffic-light li.closed {
+            border: 1px solid rgba(0, 0, 0, .3);
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+<ul id="traffic-light">
+    <li class="red"></li>
+    <li class="yellow"></li>
+    <li class="green"></li>
+</ul>
+<script>
+  const trafficLight = document.querySelector('#traffic-light');
+  const redLight = trafficLight.querySelector('.red');
+  const yellowLight = trafficLight.querySelector('.yellow');
+  const greenLight = trafficLight.querySelector('.green');
+
+  // 'redLight':2,'greenLight':3,'redLight':3
+  function lightSequence() {
+    const originLightSequence = Array.from(arguments);
+    if (originLightSequence.length <= 0) return;
+    originLightSequence.forEach(originLight => {
+      let [lightColor, duration] = originLight.split(/\s*:\s*/);
+      lightColor = [lightColor];
+      console.log(lightColor, duration);
+
+    });
+  }
+
+  lightSequence('redLight:2', 'greenLight:3', 'redLight:3');
+</script>
+</body>
+</html>
